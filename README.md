@@ -21,6 +21,7 @@
 * Swift 5
 * Objective-C
 * iOS 9 and above
+* Manages playlist
 
 
 ### Provided code for
@@ -33,13 +34,19 @@
 ### How to use?
 Drag and drop SDK in your project.
 
-To play use below code
+Create song object
 ```
-let song = MySongObj()
+let song = MySongObj()//MySongObj is your class which implements SHAudioPlayerItemProtocol
 song.songUrl = your song URL
-hlsLiveStream.albumArtImage = UIImage(named: "MusicImg")
-let arSongs = [song]
+song.albumArtImage = UIImage(named: "MusicImg")//Optional album art image. Also support url, provided code in MySongObj class.
+```
+Setup playlist
+```
+let arSongs = [song]//Playlist
 SHAudioPlayer.shared.initialize(songsAr: arSongs)
+```
+Play
+```
 SHAudioPlayer.shared.play(atIndex: 0)
 ```
 
