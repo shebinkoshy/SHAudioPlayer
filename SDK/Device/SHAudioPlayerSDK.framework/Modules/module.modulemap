@@ -1,0 +1,11 @@
+framework module SHAudioPlayerSDK {
+  umbrella header "SHAudioPlayerSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SHAudioPlayerSDK.Swift {
+    header "SHAudioPlayerSDK-Swift.h"
+    requires objc
+}
