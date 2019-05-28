@@ -24,15 +24,16 @@
 
 
 ### Provided code for
-* Automatic handling of interruptions
+* Audio interruptions handling
 * Background play
 * Actions from Control Center/EarPods
 * Update UI in Control Center
 
 
 ### How to use?
-Drag and drop SDK in your project
+Drag and drop SDK in your project.
 
+To play use below code
 ```
 let song = MySongObj()
 song.songUrl = your song URL
