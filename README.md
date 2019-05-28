@@ -15,11 +15,13 @@
 
 ### AudioPlayer supports
 * Live audio streaming
-* HLS/m3u8/m3u audio
+* HLS/m3u8/m3u audio streaming
 * Play from local audio file
-* Supports many audio codec incluing mp3
+* Supports many audio codecs incluing mp3
 * Swift 5
 * Objective-C
+* iOS 9 and above
+
 
 ### Provided code for
 * Automatic handling of interruptions
@@ -42,4 +44,4 @@ SHAudioPlayer.shared.play(atIndex: 0)
 
 For more details, please look `ViewController.swift` in sample project.
 
-On request features will be added.
+#### On request features will be added.
