@@ -13,7 +13,7 @@
 [#swift5](https://github.com/topics/swift5)
 [#iOS](https://github.com/topics/ios)
 
-Keep in touch with the developer  [![Join the chat at https://gitter.im/iOS-objectiveC-swift/iOSsupport](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iOS-objectiveC-swift/iOSsupport?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Contact the development team:  [![Join the chat at https://gitter.im/iOS-objectiveC-swift/iOSsupport](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iOS-objectiveC-swift/iOSsupport?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### AudioPlayer supports
 * Live audio streaming
