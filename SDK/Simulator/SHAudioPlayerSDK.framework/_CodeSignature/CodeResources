@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		jVFcnp6JF9oAxqtshxHWNyP5E84=
-		</data>
 		<key>Headers/SHAudioPlayerBridge.h</key>
 		<data>
 		8VN77PT24g1SpAX2oxm22CqS8H0=
@@ -40,17 +36,25 @@
 		<data>
 		mMZiJPPwRWyZoQH5fwTbwjkRkRw=
 		</data>
+		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		j8+mGR4apADneqCxbzYBZKZH6SA=
+		</data>
 		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ORG5hPkFmSQpH85uiJgkpDThWt8=
+		7W/F4LrRrbchUPslgrkGvmdAk64=
 		</data>
 		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
 		mMZiJPPwRWyZoQH5fwTbwjkRkRw=
 		</data>
+		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64.swiftinterface</key>
+		<data>
+		j8+mGR4apADneqCxbzYBZKZH6SA=
+		</data>
 		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ORG5hPkFmSQpH85uiJgkpDThWt8=
+		7W/F4LrRrbchUPslgrkGvmdAk64=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -136,15 +140,26 @@
 			2nXO5rrfXoNof2nRUizsSvtYNUEI34DGgSRzs7gjdZs=
 			</data>
 		</dict>
+		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j8+mGR4apADneqCxbzYBZKZH6SA=
+			</data>
+			<key>hash2</key>
+			<data>
+			EtOrLhKPxWe8mNfZtbyoVYvbag4/7G60IPpyT0IhjaQ=
+			</data>
+		</dict>
 		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ORG5hPkFmSQpH85uiJgkpDThWt8=
+			7W/F4LrRrbchUPslgrkGvmdAk64=
 			</data>
 			<key>hash2</key>
 			<data>
-			/wZj2SwXEZZaoJ4dmjelqkaQk+riWJd3+wll1QnYO74=
+			r1Aib9tHG4vI5LUsjeOi8n6rzkiTfzKPWLhyiSUZB50=
 			</data>
 		</dict>
 		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -158,15 +173,26 @@
 			2nXO5rrfXoNof2nRUizsSvtYNUEI34DGgSRzs7gjdZs=
 			</data>
 		</dict>
+		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j8+mGR4apADneqCxbzYBZKZH6SA=
+			</data>
+			<key>hash2</key>
+			<data>
+			EtOrLhKPxWe8mNfZtbyoVYvbag4/7G60IPpyT0IhjaQ=
+			</data>
+		</dict>
 		<key>Modules/SHAudioPlayerSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ORG5hPkFmSQpH85uiJgkpDThWt8=
+			7W/F4LrRrbchUPslgrkGvmdAk64=
 			</data>
 			<key>hash2</key>
 			<data>
-			/wZj2SwXEZZaoJ4dmjelqkaQk+riWJd3+wll1QnYO74=
+			r1Aib9tHG4vI5LUsjeOi8n6rzkiTfzKPWLhyiSUZB50=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
