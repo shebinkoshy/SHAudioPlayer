@@ -1,0 +1,86 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SHAudioPlayerSDK
+import AVFoundation
+import Foundation
+import MediaPlayer
+@_exported import SHAudioPlayerSDK
+import Swift
+import UIKit
+@objc public class SHAudioPlayer : ObjectiveC.NSObject {
+  public static var shared: SHAudioPlayerSDK.SHAudioPlayer
+  weak public var delegate: SHAudioPlayerSDK.SHAudioPlayerDelegate?
+  public func initialize(songsAr: [SHAudioPlayerSDK.SHAudioPlayerItemProtocol])
+  public func play(atIndex: Swift.Int)
+  public func next()
+  public func sliderValueChanged(slider: UIKit.UISlider)
+  public func previous()
+  public func playPauseAction()
+  public func stop()
+  public func pause()
+  public func resume()
+  public func isPaused() -> Swift.Bool
+  public func isPlaying() -> Swift.Bool
+  public func isLoading() -> Swift.Bool
+  public func isReady() -> Swift.Bool
+  public func currentPlayerItem() -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
+  public func duration() -> Swift.Double
+  public func progress() -> Swift.Double
+  @objc deinit
+}
+extension SHAudioPlayer : SHAudioPlayerSDK.SHAudioPlayerPrivateDelegate {
+  @objc dynamic public func shAudioPlayerPrivateCurrentItemDidChanged(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc dynamic public func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, updateCurrentItemTitle: Swift.String?)
+  @objc dynamic public func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, updateSliderValue: Swift.Float, currentTime: Swift.Double, duration: Swift.Double)
+  @objc dynamic public func shAudioPlayerPrivateStatusDidChanged(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc dynamic public func shAudioPlayerPrivateResetDurationUI(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc dynamic public func shAudioPlayerPrivateUpdateInfoCenter(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc dynamic public func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, didEndCurrentItem: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Bool
+}
+@objc public protocol SHAudioPlayerPrivateProtocol : AnyObject {
+  @objc weak var delegate: SHAudioPlayerSDK.SHAudioPlayerPrivateDelegate? { get set }
+  @objc func isReady() -> Swift.Bool
+  @objc func isLoading() -> Swift.Bool
+  @objc func isPlaying() -> Swift.Bool
+  @objc func isPaused() -> Swift.Bool
+  @objc func volume() -> Swift.Float
+  @objc func currentSongTitle() -> Swift.String?
+  @objc func sliderValueChanged(slider: UIKit.UISlider)
+  @objc func previous()
+  @objc func next()
+  @objc func play(atIndex: Swift.Int)
+  @objc func playPauseAction()
+  @objc func stop()
+  @objc func pause()
+  @objc func resume()
+  @objc func currentSongUrl() -> Foundation.URL?
+  @objc func isAlbumLoaded() -> Swift.Bool
+  @objc func currentUrls() -> [Foundation.URL]?
+  @objc func currentPlayerItem() -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
+  @objc func duration() -> Swift.Double
+  @objc func progress() -> Swift.Double
+}
+@objc public protocol SHAudioPlayerPrivateDelegate : AnyObject {
+  @objc func shAudioPlayerPrivateCurrentItemDidChanged(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, updateCurrentItemTitle: Swift.String?)
+  @objc func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, updateSliderValue: Swift.Float, currentTime: Swift.Double, duration: Swift.Double)
+  @objc func shAudioPlayerPrivateStatusDidChanged(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc func shAudioPlayerPrivateResetDurationUI(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc func shAudioPlayerPrivateUpdateInfoCenter(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
+  @objc func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, didEndCurrentItem: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Bool
+}
+@objc public class SHPlayList : ObjectiveC.NSObject {
+  @objc public static var shared: SHAudioPlayerSDK.SHPlayList
+  @objc public func playListArray() -> [SHAudioPlayerSDK.SHAudioPlayerItemProtocol]?
+  @objc public func indexOfSong(song: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Int
+  @objc public func songFromIndex(index: Swift.Int) -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
+  @objc public func count() -> Swift.Int
+  @objc public func setupSongs(songs: [SHAudioPlayerSDK.SHAudioPlayerItemProtocol])
+  @objc public func songUrls() -> [Foundation.URL]?
+  @objc public func songFromUrl(url: Foundation.URL) -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
+  @objc public func nextSong(_ currentItem: SHAudioPlayerSDK.SHAudioPlayerItemProtocol?) -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
+  @objc public func prevSong() -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
+  @objc public func isHLS(song: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
