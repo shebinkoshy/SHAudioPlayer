@@ -17,11 +17,11 @@ Contact the development team:  [![Join the chat at https://gitter.im/iOS-objecti
 
 ### AudioPlayer supports
 * Live audio streaming
-* HLS/m3u8/m3u audio streaming
+* HLS/m3u8/m3u/m4a audio streaming
 * Play from local audio file
 * Supports many audio codecs incluing mp3
 * Swift 5
-* Objective-C
+* ~~Objective-C~~
 * iOS 9 and above
 * Manages playlist
 
