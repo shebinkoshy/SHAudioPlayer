@@ -87,9 +87,9 @@ class ViewController: UIViewController {
         hlsLiveStream.songUrl = URL(string: "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us4.internet-radio.com:8266/listen.pls&t=.m3u")
         hlsLiveStream.albumArtImage = UIImage(named: "MusicImg")
         
-        let stream1 = MySongObj()
-        stream1.songUrl = URL(string: "http://rom1.be/wp-content/uploads/2013/09/Dimitri-Vegas-Like-Mike-vs.-Sander-Van-Doorn-Project-T-Martin-Garrix-Remix..mp3")
-        stream1.albumArtImage = UIImage(named: "MusicImg")
+//        let stream1 = MySongObj()
+//        stream1.songUrl = URL(string: "http://rom1.be/wp-content/uploads/2013/09/Dimitri-Vegas-Like-Mike-vs.-Sander-Van-Doorn-Project-T-Martin-Garrix-Remix..mp3")
+//        stream1.albumArtImage = UIImage(named: "MusicImg")
         
         let hlsLiveStream2 = MySongObj()
         hlsLiveStream2.songUrl = URL(string: "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk3.internet-radio.com:8405/live.m3u&t=.m3u")
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
         local1.songUrl = URL(fileURLWithPath: local1StrUrl!)
         local1.albumArtImage = UIImage(named: "MusicImg")
         
-        let arSongs = [hlsLiveStream,stream1,hlsLiveStream2,stream2,liveStream1,local1]
+        let arSongs = [hlsLiveStream,hlsLiveStream2,stream2,liveStream1,local1]
         SHAudioPlayer.shared.initialize(songsAr: arSongs)
         
         SHAudioPlayer.shared.play(atIndex: 0)
