@@ -54,4 +54,7 @@ SHAudioPlayer.shared.play(atIndex: 0)
 
 For more details, please look `ViewController.swift` in sample project.
 
+Note: At present we are providing two SDK, one is specifically for real device and another one is specifically for simulator. You can find both inside SDK folder.
+
+
 #### On request features will be added.
