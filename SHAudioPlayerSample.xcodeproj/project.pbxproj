@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9808504E24C2F0150026B90B /* SHAudioPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9808504C24C2F0030026B90B /* SHAudioPlayerSDK.framework */; };
+		9808504F24C2F0150026B90B /* SHAudioPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9808504C24C2F0030026B90B /* SHAudioPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF092C0B2299918600690AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF092C0A2299918600690AE2 /* AppDelegate.swift */; };
 		AF092C0D2299918600690AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF092C0C2299918600690AE2 /* ViewController.swift */; };
 		AF092C102299918600690AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF092C0E2299918600690AE2 /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		AF092C152299918900690AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF092C132299918900690AE2 /* LaunchScreen.storyboard */; };
 		AF092C1F2299927300690AE2 /* MySongObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF092C1E2299927200690AE2 /* MySongObj.swift */; };
 		AF8D5DF5229D527D00DE00F9 /* system_alerts_melodic_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF8D5DF4229D527C00DE00F9 /* system_alerts_melodic_01.mp3 */; };
-		AF8D5DF7229D52E200DE00F9 /* SHAudioPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF092C1C2299919C00690AE2 /* SHAudioPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AF8D5DF7229D52E200DE00F9 /* SHAudioPlayerSDK.framework in Embed Frameworks */,
+				9808504F24C2F0150026B90B /* SHAudioPlayerSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9808504C24C2F0030026B90B /* SHAudioPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SHAudioPlayerSDK.framework; sourceTree = SOURCE_ROOT; };
 		AF092C072299918600690AE2 /* SHAudioPlayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHAudioPlayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF092C0A2299918600690AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF092C0C2299918600690AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +41,6 @@
 		AF092C112299918900690AE2 /* SHAudioPlayerSampleAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SHAudioPlayerSampleAssets.xcassets; sourceTree = "<group>"; };
 		AF092C142299918900690AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF092C162299918900690AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF092C1C2299919C00690AE2 /* SHAudioPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SHAudioPlayerSDK.framework; sourceTree = SOURCE_ROOT; };
 		AF092C1E2299927200690AE2 /* MySongObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySongObj.swift; sourceTree = "<group>"; };
 		AF8D5DF4229D527C00DE00F9 /* system_alerts_melodic_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = system_alerts_melodic_01.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9808504E24C2F0150026B90B /* SHAudioPlayerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,7 @@
 				AF092C0A2299918600690AE2 /* AppDelegate.swift */,
 				AF092C1E2299927200690AE2 /* MySongObj.swift */,
 				AF092C0C2299918600690AE2 /* ViewController.swift */,
-				AF092C1C2299919C00690AE2 /* SHAudioPlayerSDK.framework */,
+				9808504C24C2F0030026B90B /* SHAudioPlayerSDK.framework */,
 				AF092C0E2299918600690AE2 /* Main.storyboard */,
 				AF092C112299918900690AE2 /* SHAudioPlayerSampleAssets.xcassets */,
 				AF092C132299918900690AE2 /* LaunchScreen.storyboard */,
@@ -314,7 +316,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WDE878RJ2T;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -337,7 +340,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WDE878RJ2T;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

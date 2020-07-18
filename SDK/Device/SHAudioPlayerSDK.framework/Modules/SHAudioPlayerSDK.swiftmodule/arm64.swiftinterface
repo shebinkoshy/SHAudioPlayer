@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name SHAudioPlayerSDK
 import AVFoundation
 import Foundation
@@ -7,7 +7,7 @@ import MediaPlayer
 @_exported import SHAudioPlayerSDK
 import Swift
 import UIKit
-@objc public class SHAudioPlayer : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SHAudioPlayer : ObjectiveC.NSObject {
   public static var shared: SHAudioPlayerSDK.SHAudioPlayer
   weak public var delegate: SHAudioPlayerSDK.SHAudioPlayerDelegate?
   public func initialize(songsAr: [SHAudioPlayerSDK.SHAudioPlayerItemProtocol])
@@ -69,7 +69,7 @@ extension SHAudioPlayer : SHAudioPlayerSDK.SHAudioPlayerPrivateDelegate {
   @objc func shAudioPlayerPrivateUpdateInfoCenter(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol)
   @objc func shAudioPlayerPrivate(_ shAudioPlayerPrivate: SHAudioPlayerSDK.SHAudioPlayerPrivateProtocol, didEndCurrentItem: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Bool
 }
-@objc public class SHPlayList : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class SHPlayList : ObjectiveC.NSObject {
   @objc public static var shared: SHAudioPlayerSDK.SHPlayList
   @objc public func playListArray() -> [SHAudioPlayerSDK.SHAudioPlayerItemProtocol]?
   @objc public func indexOfSong(song: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Int
@@ -81,6 +81,6 @@ extension SHAudioPlayer : SHAudioPlayerSDK.SHAudioPlayerPrivateDelegate {
   @objc public func nextSong(_ currentItem: SHAudioPlayerSDK.SHAudioPlayerItemProtocol?) -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
   @objc public func prevSong() -> SHAudioPlayerSDK.SHAudioPlayerItemProtocol?
   @objc public func isHLS(song: SHAudioPlayerSDK.SHAudioPlayerItemProtocol) -> Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
